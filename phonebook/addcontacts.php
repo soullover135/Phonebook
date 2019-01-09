@@ -1,5 +1,5 @@
 <?php
-	session_start();	
+	session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
@@ -7,21 +7,26 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link href="css/style.css" rel="stylesheet">
 </head>
-<body class="container mainbox" style="width:600px;"><br/><br/>
+<body>
 		<table class="table table-hover table-secondary ">
 		  <thead>
 			<tr>
-					<th scope="col"><a href="index.html" class="text-info"></a></th>
-					<th scope="col"></th>
-					<th scope="col"></th>
-					<th scope="col" class = "font-weight-bold"><center>Add contact</center></th>
-					<th scope="col"></th>
-					<th scope="col"></th>
-					<th scope="col"><a href="list.html" class="text-info" style="float: right;"></a></th>
+					<th scope="col"><a class="text-info" href="home.php">
+	<?php
+		if(isset($_SESSION['u_id'])){
+			echo ($_SESSION['u_first']);
+			echo ' ';
+			echo ($_SESSION['u_last']);
+		}
+	?></a></th>
+					
+					<th scope="col"><a class="text-info" style="float: right;"><form action="includes/logout.inc.php" method="POST"><button type="submit" name="submit" class="btn btn-primary">Logout</button></form></a></th>
 			</tr>
 		  </thead>
-		  
 		</table>
+	<br/><br/>
+	<br/>
+	
 	<div class="container" style="width: 450px ; drop shadow rectangle">
 		<form action = "includes/addcontacts.inc.php" method="POST">
 				
@@ -41,11 +46,16 @@
 					<input type="text" class="form-control" name="address" id="inputAddress" placeholder="1234 Main St" required>
 				  </div>
 				  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-</form>
-</div>
-	<br/><br/><br/>			  
-
-	
+				  <button class="btn btn-light"><a href="home.php">Cancel</a></button>
+		</form>
+	</div>
+</body>
 </html>
-  
+	
+	
+	
+	
+	
+	
+	
 	

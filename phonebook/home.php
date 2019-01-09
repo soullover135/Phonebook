@@ -12,7 +12,7 @@
 		<table class="table table-hover table-secondary ">
 		  <thead>
 			<tr>
-					<th scope="col"><a class="text-info" >
+					<th scope="col"><a class="text-info" href="home.php">
 	<?php
 		if(isset($_SESSION['u_id'])){
 			echo ($_SESSION['u_first']);
@@ -59,10 +59,10 @@
 			  <th scope="row"><?php echo $row["contact_first"]; echo " "; echo $row["contact_last"]; ?></th>
 			  <td><?php echo $row["contact_no"]; ?></td>
 				<td><?php echo $row["contact_add"]; 	?> </td>
-			  <td><a href="includes/delete.inc.php?>">Delete</a></td>
+			  <td><a href="includes/delete.inc.php?user_first=<?php echo $row["contact_first"]; ?>">Delete</a></td>
 			</tr>
 			<?php		}
-					
+				
 				}
 				?>
 		  </tbody>
