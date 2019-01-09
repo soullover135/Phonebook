@@ -50,7 +50,7 @@ session_start();
 					<input type="password" name="pwd" class="form-control"  placeholder="Password" >
 				  </div>
 				  <button type="submit" name="submit" class="btn btn-primary">Sign Up</button>
-				  <button type="submit" name="cancel" class="btn btn-light"><a href="index.php">Cancel</a></button>
+				  <button class="btn btn-light"><a href="index.php">Cancel</a></button>
 </form>
 </div>
 	<br/><br/><br/>			  

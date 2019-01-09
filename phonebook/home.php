@@ -58,8 +58,8 @@
 			<tr>
 			  <th scope="row"><?php echo $row["contact_first"]; echo " "; echo $row["contact_last"]; ?></th>
 			  <td><?php echo $row["contact_no"]; ?></td>
-				<td><?php echo $row["contact_add"]; ?> </td>
-			  <td>@mdo</td>
+				<td><?php echo $row["contact_add"]; 	?> </td>
+			  <td><a href="includes/delete.inc.php?>">Delete</a></td>
 			</tr>
 			<?php		}
 					
