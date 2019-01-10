@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link href="css/style.css" rel="stylesheet">
 </head>
-<body>
+
+<body background="img/123.jpg" style= "background-size: cover";>
 		<table class="table table-hover table-secondary ">
 		  <thead>
 			<tr>

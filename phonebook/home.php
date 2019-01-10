@@ -58,7 +58,7 @@
 			  <td><?php echo $row["contact_no"]; ?></td>
 				<td><?php echo $row["contact_add"]; 	?> </td>
 			  <td><a href="includes/delete.inc.php">Edit</a>
-			   <a href="includes/delete.inc.php">Delete</a></td>
+			   <a href="includes/delete.inc.php?contact_first="<?php echo $row["contact_first"]; ?>">Delete</a></td>
 			</tr>
 			<?php		}
 				
