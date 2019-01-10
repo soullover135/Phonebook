@@ -7,25 +7,23 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link href="css/style.css" rel="stylesheet">
 </head>
-<body>
-<body>
+<body background="img/123.jpg" style= "background-size: cover";>
 		<table class="table table-hover table-secondary ">
 		  <thead>
 			<tr>
-					<th scope="col"><a class="text-info" href="home.php">
+					<th scope="col"><h3><a class="text-info" href="home.php">
 	<?php
 		if(isset($_SESSION['u_id'])){
 			echo ($_SESSION['u_first']);
 			echo ' ';
 			echo ($_SESSION['u_last']);
 		}
-	?></a></th>
+	?></a><h3></th>
 					
 					<th scope="col"><a class="text-info" style="float: right;"><form action="includes/logout.inc.php" method="POST"><button type="submit" name="submit" class="btn btn-primary">Logout</button></form></a></th>
 			</tr>
 		  </thead>
 		</table>
-	<br/><br/>
 	<br/>
 	<div class="container">
 	<form>
@@ -59,7 +57,8 @@
 			  <th scope="row"><?php echo $row["contact_first"]; echo " "; echo $row["contact_last"]; ?></th>
 			  <td><?php echo $row["contact_no"]; ?></td>
 				<td><?php echo $row["contact_add"]; 	?> </td>
-			  <td><a href="includes/delete.inc.php?user_first=<?php echo $row["contact_first"]; ?>">Delete</a></td>
+			  <td><a href="includes/delete.inc.php">Edit</a>
+			   <a href="includes/delete.inc.php">Delete</a></td>
 			</tr>
 			<?php		}
 				

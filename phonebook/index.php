@@ -9,7 +9,9 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 	<link href="css/style.css" rel="stylesheet">
 </head>
-<body class="container mainbox" style="width:450px;"><br/><br/>
+<body  background="img/12345.jpg" style= "background-size: cover";>
+<br><br><br><br>
+<div class="container mainbox" style="width:450px;"><br/><br/>
 		<br/><br/><br/><table class="table table-hover table-secondary ">
 		  <thead>
 			<tr>
@@ -24,8 +26,8 @@
 		  </thead>
 		  
 		</table>
-	<div class="container" style="width: 350px ; drop shadow rectangle">
-		<form action = "includes/login.inc.php" method="POST">
+	<div class="container" style="width: 350px ; drop shadow rectangle" >
+		<form action = "includes/login.inc.php" method="POST" class= "container">
 				<br/>
 				  <label for="exampleInputname">Username</label>				
 					  <input type="text" name="uid" class="form-control" placeholder="Username"  ><br/>
@@ -39,8 +41,9 @@
 	</div>
 	<section href="signup.php">
 	</section>
-	
-	<br/><br/><br/>			  
+</div>
+	<br/><br/><br/>	
+</body>	
 </html>
   
 	

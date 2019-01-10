@@ -11,14 +11,14 @@
 		<table class="table table-hover table-secondary ">
 		  <thead>
 			<tr>
-					<th scope="col"><a class="text-info" href="home.php">
+					<th scope="col"><h3><a class="text-info" href="home.php">
 	<?php
 		if(isset($_SESSION['u_id'])){
 			echo ($_SESSION['u_first']);
 			echo ' ';
 			echo ($_SESSION['u_last']);
 		}
-	?></a></th>
+	?></a><h3></th>
 					
 					<th scope="col"><a class="text-info" style="float: right;"><form action="includes/logout.inc.php" method="POST"><button type="submit" name="submit" class="btn btn-primary">Logout</button></form></a></th>
 			</tr>
